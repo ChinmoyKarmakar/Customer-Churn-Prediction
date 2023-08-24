@@ -1,29 +1,31 @@
 # Importing Dependencies
 import logging
 
+import mlflow
 import pandas as pd
-from sklearn.base import ClassifierMixin
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 
-from src.evaluation import Accuracy, Precision, Recall, F1Score
+from src.evaluation import Accuracy, Precision, Recall, F1Score, ROCAUCScore
 
 from typing import Tuple
 from typing_extensions import Annotated
 
 # Creating a step for model evaluation
 def eval_model(
-    model: ClassifierMixin,
+    model: LogisticRegression,
     X_test: pd.DataFrame,
     y_test: pd.DataFrame
 ) -> Tuple[
     Annotated[float, "Accuracy"],
     Annotated[float, "Precision"],
     Annotated[float, "Recall"],
-    Annotated[float, "F1 Score"]]:
+    Annotated[float, "F1 Score"]
+    Annotated[float, "ROC AUC Score"]
+]:
     """
     Evaluating the model on the dataframe
     Args:
-        model (ClassifierMixin): Trained model
+        model (Logistic Regression): Trained model
         X_test (pd.DataFrame): Testing data
         y_test (pd.DataFrame): Testing labels
     Returns:
@@ -31,6 +33,7 @@ def eval_model(
         Precision (float): Precision
         Recall (float): Recall
         F1 Score (float): F1 Score
+        ROC AUC Score (float): ROC AUC Score
     """
     try:
         logging.info("Evaluating the model")
@@ -43,13 +46,20 @@ def eval_model(
         prec = Precision().calculate(y_test, y_pred)
         rec = Recall().calculate(y_test, y_pred)
         f1 = F1Score().calculate(y_test, y_pred)
+        rocauc = ROCAUCScore().calculate(y_test, y_pred)
 
-        logging.info(f"Accuracy Score: {acc}")
-        logging.info(f"Precision Score: {prec}")
-        logging.info(f"Recall Score: {rec}")
-        logging.info(f"F1 Score: {f1}")
+        # Logging the metrics to MLFlow
+        mlflow.log_metrics({
+            "Accuracy": acc,
+            "Precision": prec,
+            "Recall": rec,
+            "F1 Score": f1,
+            "ROC AUC Score": rocauc
+        })
 
-        return acc, prec, rec, f1
+        logging.info("Evaluation completed successfully")
+
+        return acc, prec, rec, f1, rocauc
     except Exception as e:
         logging.error(f"Error in evaluating the model: {e}")
         raise e

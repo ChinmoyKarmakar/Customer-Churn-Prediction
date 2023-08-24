@@ -3,7 +3,7 @@ import logging
 from abc import ABC, abstractmethod
 
 import numpy as np
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 
 # Creating a class for model evaluation
 class ModelEvaluation(ABC):
@@ -80,4 +80,19 @@ class F1Score(ModelEvaluation):
             return f1
         except Exception as e:
             logging.error(f"Error in calculating F1 Score: {e}")
+            raise e
+
+# Creating a class for ROC AUC Score
+class ROCAUCScore(ModelEvaluation):
+    """
+    Evaluation Strategy for ROC AUC Score
+    """
+    def calculate(self, y_true: np.ndarray, y_pred: np.ndarray):
+        try:
+            logging.info("Calculating ROC AUC Score")
+            roc_auc = roc_auc_score(y_true, y_pred)
+            logging.info(f"ROC AUC Score: {roc_auc}")
+            return roc_auc
+        except Exception as e:
+            logging.error(f"Error in calculating ROC AUC Score: {e}")
             raise e
