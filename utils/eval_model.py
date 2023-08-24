@@ -19,7 +19,7 @@ def eval_model(
     Annotated[float, "Accuracy"],
     Annotated[float, "Precision"],
     Annotated[float, "Recall"],
-    Annotated[float, "F1 Score"]
+    Annotated[float, "F1 Score"],
     Annotated[float, "ROC AUC Score"]
 ]:
     """

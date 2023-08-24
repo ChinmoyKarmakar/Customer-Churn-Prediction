@@ -35,7 +35,7 @@ def train_model(
         mlflow.sklearn.autolog()
 
         # Training the model
-        model = CustomRandomForestClassifier()
+        model = CustomLogisticRegressionModel()
         model.train(X_train, y_train)
         return model
     except Exception as e:
