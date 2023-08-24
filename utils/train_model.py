@@ -1,10 +1,11 @@
 # Importing Dependencies
 import logging
 
+import mlflow
 import pandas as pd
 
-from sklearn.ensemble import RandomForestClassifier
-from src.model import CustomRandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from src.model import CustomLogisticRegressionModel
 
 from typing import Tuple
 from typing_extensions import Annotated
@@ -13,7 +14,7 @@ from typing_extensions import Annotated
 def train_model(
     X_train: pd.DataFrame,
     y_train: pd.DataFrame
-) -> Annotated[RandomForestClassifier, "Trained Model"]:
+) -> Annotated[LogisticRegression, "Trained Model"]:
     """
     Training the model
 
@@ -24,10 +25,16 @@ def train_model(
         y_test (pd.DataFrame): Testing labels
 
     Returns:
-        model (ClassifierMixin): Trained model
+        model (Logistic Regression): Trained model
     """
     try:
         model = None
+        logging.info("Training the model")
+
+        # Logging the Model Artifacts to MLFlow
+        mlflow.sklearn.autolog()
+
+        # Training the model
         model = CustomRandomForestClassifier()
         model.train(X_train, y_train)
         return model

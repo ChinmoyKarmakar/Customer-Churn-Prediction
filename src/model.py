@@ -2,7 +2,7 @@
 import logging
 from abc import ABC, abstractmethod
 
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 
 # Create a class for the Model
 class Model(ABC):
@@ -32,33 +32,33 @@ class Model(ABC):
         """
         pass
 
-# Create a class for the Random Forest Model
-class CustomRandomForestClassifier(Model):
+# Create a class for the Logistic Regression Model
+class CustomLogisticRegressionModel(Model):
     """
-    Class for the Custom Random Forest Model
+    Class for the Custom Logistic Regression Model
     """
     def __init__(self):
         """
         Initializes the model
         """
-        self.rf = None
+        self.lr = None
 
-    def train(self, X_train, y_train) -> RandomForestClassifier:
+    def train(self, X_train, y_train) -> LogisticRegression:
         """
         Trains the model
         Args:
             X_train (pd.DataFrame): Training data
             y_train (pd.Series): Training labels
         Returns:
-            rf: Random Forest Model
+            lr: Logistic Regression Model
         """
         try:
             # Train the model
-            self.rf = RandomForestClassifier(n_estimators=100, random_state=42)
-            self.rf.fit(X_train, y_train)
+            self.lr = LogisticRegression(random_state=42, max_iter=1000)
+            self.lr.fit(X_train, y_train)
 
             logging.info("Training completed successfully")
-            return self.rf
+            return self.lr
         except Exception as e:
             logging.error(f"Error in training the model: {e}")
             raise e
@@ -67,14 +67,13 @@ class CustomRandomForestClassifier(Model):
         """
         Predicts the values
         Args:
-            model: Trained model
             X_test (pd.DataFrame): Testing data
         Returns:
             y_pred: Predicted values
         """
         try:
             # Predict the values
-            y_pred = self.rf.predict(X_test)
+            y_pred = self.lr.predict(X_test)
 
             logging.info("Prediction completed successfully")
             return y_pred
