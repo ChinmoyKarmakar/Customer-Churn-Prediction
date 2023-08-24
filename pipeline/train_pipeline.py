@@ -16,10 +16,20 @@ def train_pipeline(data_path: str):
         None
     """
     df = ingest_data(data_path)
+    print("Data Ingested Successfully")
+    
     X_train, X_test, y_train, y_test = clean_data(df)
+    print("Data Preprocessed Successfully")
+    
     model = train_model(X_train, y_train)
+    print("Logistic Regression Model Trained Successfully")
+
     accuracy_score, precision_score, recall_score, f1_score, roc_auc_score = eval_model(model, X_test, y_test)
+    print("Model Evaluated Successfully")
+    
+    print("Metrics:")
     print(f"Accuracy: {accuracy_score}")
     print(f"Precision: {precision_score}")
     print(f"Recall: {recall_score}")
     print(f"F1 Score: {f1_score}")
+    print(f"ROC AUC Score: {roc_auc_score}")
