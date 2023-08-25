@@ -37,11 +37,14 @@ class CustomLogisticRegressionModel(Model):
     """
     Class for the Custom Logistic Regression Model
     """
-    def __init__(self):
+    def __init__(self, hyperparameters=None):
         """
         Initializes the model
+        Args:
+            hyperparameters (dict, optional): Dictionary of hyperparameters
         """
         self.lr = None
+        self.hyperparameters = hyperparameters if hyperparameters else {}
 
     def train(self, X_train, y_train) -> LogisticRegression:
         """
@@ -53,8 +56,8 @@ class CustomLogisticRegressionModel(Model):
             lr: Logistic Regression Model
         """
         try:
-            # Train the model
-            self.lr = LogisticRegression(random_state=42, max_iter=1000)
+            # Train the model with specified hyperparameters
+            self.lr = LogisticRegression(random_state=42, max_iter=1000, **self.hyperparameters)
             self.lr.fit(X_train, y_train)
 
             logging.info("Training completed successfully")
