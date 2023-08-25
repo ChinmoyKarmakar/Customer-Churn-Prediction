@@ -22,7 +22,8 @@ if __name__ == '__main__':
     logging.info("Fine Tuning Pipeline Completed Successfully")
 
     # Saving the model
-    model.save("saved_models/logistic_regression_model.pkl")
+    save_path = "saved_models/logistic_regression_model.pkl"
+    model.save(save_path)
     print("Model Saved Successfully")
 
     logging.info("Model Saved Successfully")
