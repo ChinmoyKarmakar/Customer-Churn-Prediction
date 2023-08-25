@@ -97,3 +97,10 @@ mlflow ui
 ```
 - The MLFlow UI will open in the browser.
 - All the experiments, model files, parameters and metrics can be viewed in the UI.
+
+## Screenshots
+1. Pipeline Output
+![Pipeline Screenshot](./assets/pipeline.png)
+
+2. Streamlit Web Application
+![Streamlit App Screenshot](./assets/streamlit.png)
