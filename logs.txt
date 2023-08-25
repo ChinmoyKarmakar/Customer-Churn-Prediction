@@ -63,3 +63,197 @@ INFO:root:ROC AUC Score: 0.49922469661331564
 INFO:root:Evaluation completed successfully
 INFO:root:Training Pipeline Completed Successfully
 INFO:root:Training and tuning the model
+INFO:root:Best parameters found: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Best hyperparameters: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.50365
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4996609403254973
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.44562040116923696
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.47109595609782084
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.5031951594098987
+INFO:root:Evaluation completed successfully
+INFO:root:Fine Tuning Pipeline Completed Successfully
+INFO:root:Starting the Training Pipeline
+INFO:root:Ingesting data from data/customer_churn_large_dataset_optimized.parquet
+INFO:root:Data ingestion step completed successfully
+INFO:root:Data cleaning step completed successfully
+INFO:root:Training the model
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.5002
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4950205815960696
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.3757685717165608
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.42722897089158834
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.49922469661331564
+INFO:root:Evaluation completed successfully
+INFO:root:Training Pipeline Completed Successfully
+INFO:root:Training and tuning the model
+INFO:root:Best parameters found: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Best hyperparameters: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.50365
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4996609403254973
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.44562040116923696
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.47109595609782084
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.5031951594098987
+INFO:root:Evaluation completed successfully
+INFO:root:Fine Tuning Pipeline Completed Successfully
+INFO:root:Starting the Training Pipeline
+INFO:root:Ingesting data from data/customer_churn_large_dataset_optimized.parquet
+INFO:root:Data ingestion step completed successfully
+INFO:root:Data cleaning step completed successfully
+INFO:root:Training the model
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.5002
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4950205815960696
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.3757685717165608
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.42722897089158834
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.49922469661331564
+INFO:root:Evaluation completed successfully
+INFO:root:Training Pipeline Completed Successfully
+INFO:root:Training and tuning the model
+INFO:root:Best parameters found: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Best hyperparameters: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.50365
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4996609403254973
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.44562040116923696
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.47109595609782084
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.5031951594098987
+INFO:root:Evaluation completed successfully
+INFO:root:Fine Tuning Pipeline Completed Successfully
+INFO:root:Starting the Training Pipeline
+INFO:root:Ingesting data from data/customer_churn_large_dataset_optimized.parquet
+INFO:root:Data ingestion step completed successfully
+INFO:root:Data cleaning step completed successfully
+INFO:root:Training the model
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.5002
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4950205815960696
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.3757685717165608
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.42722897089158834
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.49922469661331564
+INFO:root:Evaluation completed successfully
+INFO:root:Training Pipeline Completed Successfully
+INFO:root:Starting the Training Pipeline
+INFO:root:Ingesting data from data/customer_churn_large_dataset_optimized.parquet
+INFO:root:Data ingestion step completed successfully
+INFO:root:Data cleaning step completed successfully
+INFO:root:Training the model
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.5002
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4950205815960696
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.3757685717165608
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.42722897089158834
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.49922469661331564
+INFO:root:Evaluation completed successfully
+INFO:root:Training Pipeline Completed Successfully
+INFO:root:Training and tuning the model
+INFO:root:Best parameters found: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Best hyperparameters: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.50365
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4996609403254973
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.44562040116923696
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.47109595609782084
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.5031951594098987
+INFO:root:Evaluation completed successfully
+INFO:root:Model Evaluated Successfully
+INFO:root:Fine Tuning Pipeline Completed Successfully
+ERROR:root:Error saving the model: [Errno 2] No such file or directory: 'saved_models/logistic_regression_model.pkl'
+INFO:root:Starting the Training Pipeline
+INFO:root:Ingesting data from data/customer_churn_large_dataset_optimized.parquet
+INFO:root:Data ingestion step completed successfully
+INFO:root:Data cleaning step completed successfully
+INFO:root:Training the model
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.5002
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4950205815960696
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.3757685717165608
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.42722897089158834
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.49922469661331564
+INFO:root:Evaluation completed successfully
+INFO:root:Training Pipeline Completed Successfully
+INFO:root:Training and tuning the model
+INFO:root:Best parameters found: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Best hyperparameters: {'C': 0.01, 'penalty': 'l1', 'solver': 'liblinear'}
+INFO:root:Training completed successfully
+INFO:root:Evaluating the model
+INFO:root:Prediction completed successfully
+INFO:root:Calculating Accuracy
+INFO:root:Accuracy: 0.50365
+INFO:root:Calculating Precision
+INFO:root:Precision: 0.4996609403254973
+INFO:root:Calculating Recall
+INFO:root:Recall: 0.44562040116923696
+INFO:root:Calculating F1 Score
+INFO:root:F1 Score: 0.47109595609782084
+INFO:root:Calculating ROC AUC Score
+INFO:root:ROC AUC Score: 0.5031951594098987
+INFO:root:Evaluation completed successfully
+INFO:root:Model Evaluated Successfully
+INFO:root:Fine Tuning Pipeline Completed Successfully
+INFO:root:Model saved successfully to saved_model/logistic_regression_model.pkl
+INFO:root:Model Saved Successfully
