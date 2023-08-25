@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/AIML/Customer-Churn-Prediction/mlruns/0/1ca105f36cc54634b1df5f1ffbb28cb8/artifacts
+end_time: 1692960146146
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ca105f36cc54634b1df5f1ffbb28cb8
+run_name: fortunate-zebra-287
+run_uuid: 1ca105f36cc54634b1df5f1ffbb28cb8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692960108617
+status: 3
+tags: []
+user_id: Cypher

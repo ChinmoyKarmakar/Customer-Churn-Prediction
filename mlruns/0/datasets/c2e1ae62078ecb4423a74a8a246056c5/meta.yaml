@@ -1,0 +1,11 @@
+digest: f3421887
+name: dataset
+profile: '{"num_rows": 80000, "num_elements": 720000}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Age"}, {"type": "double",
+  "name": "Gender"}, {"type": "double", "name": "Location"}, {"type": "double", "name":
+  "Subscription_Length_Months"}, {"type": "double", "name": "Monthly_Bill"}, {"type":
+  "double", "name": "Total_Usage_GB"}, {"type": "double", "name": "Avg_Usage_per_Month"},
+  {"type": "double", "name": "Bill_to_Usage_Ratio"}, {"type": "double", "name": "Age_to_Usage_Ratio"}]}'
+source: '{"tags": {"mlflow.user": "Cypher", "mlflow.source.name": "run_pipeline.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "a17369beaf7e16264f6fe626ae8bc191b36ce8d8"}}'
+source_type: code

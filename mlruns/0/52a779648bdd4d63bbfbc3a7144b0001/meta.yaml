@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/AIML/Customer-Churn-Prediction/mlruns/0/52a779648bdd4d63bbfbc3a7144b0001/artifacts
+end_time: 1692960146146
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 52a779648bdd4d63bbfbc3a7144b0001
+run_name: secretive-skink-665
+run_uuid: 52a779648bdd4d63bbfbc3a7144b0001
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692960108617
+status: 3
+tags: []
+user_id: Cypher

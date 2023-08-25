@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/AIML/Customer-Churn-Prediction/mlruns/0/709c251272bd4656b5159af6f2e81d4e/artifacts
+end_time: 1692960108382
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 709c251272bd4656b5159af6f2e81d4e
+run_name: delicate-loon-431
+run_uuid: 709c251272bd4656b5159af6f2e81d4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692960098885
+status: 3
+tags: []
+user_id: Cypher

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/AIML/Customer-Churn-Prediction/mlruns/0/7649276d6dcc4cc6b08bf78b54638493/artifacts
+end_time: 1692960146146
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7649276d6dcc4cc6b08bf78b54638493
+run_name: capricious-smelt-673
+run_uuid: 7649276d6dcc4cc6b08bf78b54638493
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692960108617
+status: 3
+tags: []
+user_id: Cypher
