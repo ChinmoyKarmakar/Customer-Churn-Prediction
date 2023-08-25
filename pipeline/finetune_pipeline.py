@@ -25,3 +25,7 @@ def fine_tune_pipeline(X_train, y_train, X_test, y_test):
     print(f"Recall: {recall_score}")
     print(f"F1 Score: {f1_score}")
     print(f"ROC AUC Score: {roc_auc_score}")
+
+    logging.info("Model Evaluated Successfully")
+
+    return tuned_model
