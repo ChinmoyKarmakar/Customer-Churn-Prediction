@@ -57,7 +57,7 @@ def get_user_input():
 
 def main():
     # Creating a sidebar for user input
-    st.sidebar.header("User Input Features")
+    st.sidebar.header("Navigation")
     page = st.sidebar.selectbox('Page Navigation', ['Home', 'Prediction'])
 
     st.sidebar.markdown("---")
