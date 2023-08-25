@@ -89,3 +89,11 @@ Streamlit was used to create the web application. The web application is used to
     streamlit run app.py
     ```
 3. The web application will open in the browser.
+
+## MLFlow UI
+- MLFlow UI was used to track the model parameters and metrics. The MLFlow UI can be accessed by running the following command:
+```
+mlflow ui
+```
+- The MLFlow UI will open in the browser.
+- All the experiments, model files, parameters and metrics can be viewed in the UI.
