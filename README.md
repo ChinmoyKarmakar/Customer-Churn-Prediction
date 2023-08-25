@@ -59,6 +59,33 @@ The Machine Learning Pipeline is used to train the model and save it in a pickle
 
 > Note: The dataset is probably synthetic and not the actual representation of the real world data. This is the reason why the models are not performing well.
 
+### 5. Model Evaluation.
+- The model was evaluated using the following metrics:
+    - Accuracy
+    - Precision
+    - Recall
+    - F1 Score
+    - ROC AUC Score
+
 ### 5. Hyperparameter Tuning.
 - The hyperparameters were tuned using Grid Search CV.
 - The best parameters were used to train the model again.
+
+### 6. Model Logging.
+- MLFlow was used to log the model parameters and metrics.
+- The model was saved in a pickle file.
+- The final model was saved in the `saved_model` folder.
+
+## Web Application
+Streamlit was used to create the web application. The web application is used to deploy the model and make predictions through an intiutive UI.
+
+### Running the Web Application
+1. Activate the virtual environment
+    ```
+    env\Scripts\activate
+    ```
+2. Run the following command
+    ```
+    streamlit run app.py
+    ```
+3. The web application will open in the browser.
