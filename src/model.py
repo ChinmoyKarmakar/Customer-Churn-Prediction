@@ -3,6 +3,7 @@ import logging
 from abc import ABC, abstractmethod
 
 from sklearn.linear_model import LogisticRegression
+from joblib import dump
 
 # Create a class for the Model
 class Model(ABC):
@@ -82,4 +83,17 @@ class CustomLogisticRegressionModel(Model):
             return y_pred
         except Exception as e:
             logging.error(f"Error in prediction: {e}")
+            raise e
+
+    def save(self, filename: str):
+        """
+        Save the model to a file
+        Args:
+            filename (str): Path to save the model
+        """
+        try:
+            dump(self.lr, filename)
+            logging.info(f"Model saved successfully to {filename}")
+        except Exception as e:
+            logging.error(f"Error saving the model: {e}")
             raise e
