@@ -8,19 +8,16 @@ The repository contains the code for the Customer Churn Prediction project. The 
 The Machine Learning Pipeline is used to train the model and save it in a pickle file. The Web Application is used to deploy the model and make predictions.
 
 ## Setup
-1. Clone the repo
-    ```
-    git clone https://github.com/suryanshgupta9933/Customer-Churn-Prediction.git
-    ```
-2. Create a virtual environment
+
+    ``Create a virtual environment
     ```
     python -m venv env
     ```
-3. Activate the virtual environment
+    Activate the virtual environment
     ```
     env\Scripts\activate
     ```
-4. Install the dependencies
+Install the dependencies
     ```
     pip install -r requirements.txt
     ```
